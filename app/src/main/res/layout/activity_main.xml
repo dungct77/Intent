@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Giải PT Bậc Nhất"
+        android:background="@color/colorPrimary"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textStyle="bold"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv"
+        android:id="@+id/tb">
+        <TableRow
+            android:orientation="horizontal"
+            android:padding="15dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nhâp số a: "/>
+            <EditText
+                android:id="@+id/edta"
+                android:inputType="number"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content" />
+        </TableRow>
+        <TableRow
+            android:orientation="horizontal"
+            android:padding="15dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nhập số b: "/>
+            <EditText
+                android:id="@+id/edtb"
+                android:inputType="number"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content" />
+        </TableRow>
+    </TableLayout>
+        />
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tb"
+        android:layout_marginTop="20dp"
+        android:text="Kết Quả"
+        android:textStyle="bold"
+        android:background="@color/colorRed"
+        android:textSize="20sp"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="Kết Quả Phương Trình"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_kq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv2"
+        android:hint="Kết Quả"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"
+        android:gravity="center"
+        />
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_kq"
+        android:layout_marginTop="20dp"
+        android:text="BACK"
+        android:textStyle="bold"
+        android:background="@color/colorRed"
+        android:textSize="20sp"
+        android:onClick="btn_back"/>
+
+
+</RelativeLayout>
+
